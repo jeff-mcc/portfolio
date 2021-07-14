@@ -1,3 +1,4 @@
+import {useEffect, useState} from 'react'
 import './App.css';
 import {GiNinjaVelociraptor} from "react-icons/gi"
 import {GiEvilMinion} from "react-icons/gi"
@@ -7,8 +8,28 @@ import {GiBattleAxe} from "react-icons/gi"
 import {GiChicken} from "react-icons/gi"
 import {GiBrickWall} from "react-icons/gi"
 // possibly use: GiBullyMinion, GiChicken, GiCow
+import Chicken from './Chicken.mp3'
 
 function App() {
+  const [audioBool, setAudioBool] = useState(false)
+  const [audio,setAudio] = useState('')
+
+  useEffect(()=>{
+    // const audioChicken = document.getElementsByClassName("chicken")[0]
+    const audioChicken = new Audio(Chicken)
+    setAudio(audioChicken)
+  },[])
+
+  const handleAudio = () => {
+    if(!audioBool){      
+      audio.play()
+    }else{
+      audio.pause()
+      audio.currentTime = 0;
+    }
+    setAudioBool(!audioBool)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -37,7 +58,8 @@ function App() {
         This is so wizard, Ani!
         <h3 className="subtitle">You have entered the lair of...</h3>
         <h1 className="title">Jeffrey McClellan, PhD</h1>
-        <GiChicken className="monster travel"/>
+        <div className="line"/>
+        <GiChicken className="monster travel" onClick={handleAudio}/>
         <div className="wall one">
           <GiBrickWall />
           <GiBrickWall />
@@ -59,9 +81,18 @@ function App() {
         <h2 className="text one">Web Developer</h2>
         <h2 className="text two">Scientist</h2>
         <h2 className="text three">Husband and Father</h2>
+        {/* <audio className="chicken">
+          <source src="./Chicken.mp3"></source>
+        </audio> */}
       </div>
     </div>
   );
 }
 
 export default App;
+
+//chicken: https://freesound.org/s/316921/
+
+//destroy: https://freesound.org/s/473910/
+
+//me and tita: https://photos.app.goo.gl/zmAuhKzKkyXdhzHaA

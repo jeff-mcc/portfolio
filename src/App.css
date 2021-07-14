@@ -32,25 +32,37 @@
 }
 
 .body{
-  background-color: pink;
+  background-color: slateblue;
   max-height: calc(100vh - 50px);
   min-height: calc(100vh - 50px - 4vmin);
   color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subtitle{
   color: black;
-  font-size: calc(10px + 3vmin);
+  font-size: calc(10px + 2vmin);
   margin: 5px 0 10px;
 }
 
 .title{
   color: black;
-  font-size: calc(10px + 6vmin);
+  font-size: calc(10px + 5vmin);
   margin: 15px 0;
   padding: 0 10px;
   position: relative;
   z-index: 99;
+}
+
+.line{
+  width: 90vw;
+  height: 2px;
+  margin: 10px 0;
+  /* background: black; */
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(slateblue), to(slateblue), color-stop(50%, black));
+  z-index: 5;
 }
 
 .monster{
@@ -224,6 +236,21 @@
     /* transform: translate(240px, 222px); */
     transform: translate(270px, 40vh);
     color: transparent;
+  }
+}
+
+@media (max-width: 650px){
+  .monster{
+    top: 20vh;
+  }
+  .one{
+    top: calc(20vh + 8vh + 20vmin);
+  }
+  .two{
+    top: calc(20vh + 24vh + 20vmin);
+  }
+  .three{
+    top: calc(20vh + 40vh + 20vmin);
   }
 }
 
