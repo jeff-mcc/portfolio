@@ -81,9 +81,9 @@ function App() {
         <h2 className="text one">Web Developer</h2>
         <h2 className="text two">Scientist</h2>
         <h2 className="text three">Husband and Father</h2>
-        {/* <audio className="chicken">
-          <source src="./Chicken.mp3"></source>
-        </audio> */}
+        <div className="img-container">
+          <img src="https://storage.googleapis.com/biomechweb/IMG_20210620_130434_528.jpg" alt="being goofy"></img>
+        </div>
       </div>
     </div>
   );
@@ -95,4 +95,4 @@ export default App;
 
 //destroy: https://freesound.org/s/473910/
 
-//me and tita: https://photos.app.goo.gl/zmAuhKzKkyXdhzHaA
+//me and tita: https://storage.googleapis.com/biomechweb/IMG_20210620_130434_528.jpg
