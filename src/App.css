@@ -1,0 +1,273 @@
+.App {
+  text-align: center;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+.App-header {
+  background-color: #282c34;
+  /* max-height: 10vh; */
+  min-height: 50px;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  font-size: calc(18px + 3vmin);
+  color: white;
+  padding: 8px 0;
+}
+
+.icon:hover{
+  transform: rotate(15deg);
+}
+
+.menu-item{
+  /* color: white; */
+  margin: 0 4vw;
+  font-size: calc(10px + 0.5vmin);
+}
+
+.body{
+  background-color: pink;
+  max-height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px - 4vmin);
+  color: transparent;
+}
+
+.subtitle{
+  color: black;
+  font-size: calc(10px + 3vmin);
+  margin: 5px 0 10px;
+}
+
+.title{
+  color: black;
+  font-size: calc(10px + 6vmin);
+  margin: 15px 0;
+  padding: 0 10px;
+  position: relative;
+  z-index: 99;
+}
+
+.monster{
+  color: purple;
+  font-size: calc(10px + 20vmin);
+  position: absolute;
+  top: 15vh;
+  left: 3vw;
+  z-index: 5;
+  animation-name: destroy;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.wall{
+  color: brown;
+  font-size: calc(10px + 6vmin);
+  position: absolute;
+  animation-name: destroyed;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.text{
+  color: transparent;
+  font-size: calc(10px + 4vmin);
+  position: absolute;
+  margin: 1vmin 0;
+  animation-name: appear;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.one{
+  left: calc(3vw + 40px);
+  /* top: calc(15vh + 74px + 20vmin); */
+  top: calc(15vh + 8vh + 20vmin);
+  animation-delay: 1s;
+}
+
+.two{
+  left: calc(3vw + 80px);
+  /* top: calc(15vh + 148px + 20vmin); */
+  top: calc(15vh + 24vh + 20vmin);
+  animation-delay: 4s;
+}
+
+.three{
+  left: calc(3vw + 120px);
+  /* top: calc(15vh + 222px + 20vmin); */
+  top: calc(15vh + 40vh + 20vmin);
+  animation-delay: 7s;
+}
+
+@keyframes destroyed {
+  0% {
+    color: brown;
+  }
+  60% {
+    color: brown;
+  }
+  67.5% {
+    color: rgb(179, 40, 40);
+  }
+  75% {
+    color: rgb(197, 38, 38);
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+@keyframes appear {
+  0% {
+    color: transparent;
+  }
+  75% {
+    color: transparent;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes destroy {
+  0% {
+    transform: rotate(0deg) translate(0) rotate(0deg);
+    color: purple;
+  }
+  9% {
+    /* transform: translate(15px, -46px); */
+    /* transform: rotate(40deg) translate(15px, -6vh) rotate(-40deg); */
+    /* animation-timing-function: ease-out; */
+  }
+  15% {
+    color: red;
+  }
+  24% {
+    /* transform: translate(40px, 74px); */
+    transform: rotate(100deg) translate(8vh, -8vh) rotate(-100deg);
+    /* animation-timing-function: cubic-bezier(.5,0,.7,1); */
+    /* animation-timing-function: ease-out; */
+  }
+  27% {
+    /* transform: translate(40px, 54px); */
+    transform: translate(50px, 5.5vh);
+    /* transform: translate(10vw, 5.5vh); */
+    animation-timing-function: ease-in-out;
+  }
+  30% {
+    /* transform: translate(40px, 74px); */
+    transform: rotate(0deg) translate(50px, 8vh) rotate(0deg);
+    animation-timing-function: ease-in-out;
+    color: orange;
+  }
+  39% {
+    /* transform: translate(55px, 28px); */
+    /* transform: translate(55px, 4vh); */
+    /* animation-timing-function: ease-out; */
+  }
+  45%{
+    color: yellow;
+  }
+  54% {
+    /* transform: translate(80px, 148px); 24vh*/
+    transform: rotate(140deg) translate(8vh, -26vh) rotate(-140deg);
+    /* animation-timing-function: cubic-bezier(.5,0,.7,1); */
+    /* animation-timing-function: ease-in-out; */
+  }
+  57% {
+    /* transform: translate(80px, 128px); */
+    transform: translate(100px, 21.5vh);
+    animation-timing-function: ease-in-out;
+  }
+  60% {
+    /* transform: translate(80px, 148px); */
+    transform: rotate(0deg) translate(100px, 24vh) rotate(0deg);
+    animation-timing-function: ease-in-out;
+    color: green;
+  }
+  69% {
+    /* transform: translate(95px, 102px); */
+    /* transform: translate(95px, 20vh); */
+    /* animation-timing-function: ease-out; */
+  }
+  75% {
+    color: blue;
+  }
+  84% {
+    /* transform: translate(120px, 222px); */
+    transform: rotate(140deg) translate(12vh, -42vh) rotate(-140deg);
+    /* animation-timing-function: cubic-bezier(.5,0,.7,1); */
+    /* animation-timing-function: ease-in-out; */
+  }
+  87% {
+    /* transform: translate(120px, 202px); */
+    transform: translate(150px, 37.5vh);
+    animation-timing-function: ease-in-out;
+  }
+  90% {
+    /* transform: translate(120px, 222px); */
+    transform: translate(150px, 40vh);
+    animation-timing-function: ease-in;
+    color: purple;
+  }
+  100% {
+    /* transform: translate(240px, 222px); */
+    transform: translate(270px, 40vh);
+    color: transparent;
+  }
+}
+
+/* @keyframes destroy {
+  0% {
+    transform: translate(0);
+  }
+  10%{
+    transform: translate(5px, -25px);
+  }
+  20%{
+    transform: translate(10px, -40.5px);
+  }
+  30%{
+    transform: translate(15px, -46px);
+  }
+  40%{
+    transform: translate(20px, -41.5px);
+  }
+  50% {
+    transform: translate(25px, -27.5px);
+  }
+  60%{
+    transform: translate(30px, -3.5px);
+  }
+  70%{
+    transform: translate(35px, 30.5px);
+  }
+  80%{
+    transform: translate(40px, 74px);
+  }
+  90%{
+    transform: translate(40px, 54px);
+  }
+  100% {
+    transform: translate(40px, 74px);
+  }
+} */
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
