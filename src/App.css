@@ -21,8 +21,13 @@
   padding: 8px 0;
 }
 
+.icon-container:hover {
+  color: goldenrod;
+}
+
 .icon:hover{
   transform: rotate(15deg);
+  /* color:goldenrod; */
 }
 
 .menu-item{
@@ -45,6 +50,7 @@
   color: black;
   font-size: calc(10px + 2vmin);
   margin: 5px 0 10px;
+  /* font-family:fantasy; */
 }
 
 .title{
@@ -66,7 +72,7 @@
 }
 
 .monster{
-  color: purple;
+  color:firebrick;
   font-size: calc(10px + 20vmin);
   position: absolute;
   top: 15vh;
@@ -196,7 +202,7 @@ img{
 @keyframes destroy {
   0% {
     transform: rotate(0deg) translate(0) rotate(0deg);
-    color: purple;
+    color: firebrick;
   }
   9% {
     /* transform: translate(15px, -46px); */
@@ -204,7 +210,7 @@ img{
     /* animation-timing-function: ease-out; */
   }
   15% {
-    color: red;
+    color:darkred;
   }
   24% {
     /* transform: translate(40px, 74px); */
@@ -222,7 +228,7 @@ img{
     /* transform: translate(40px, 74px); */
     transform: rotate(0deg) translate(50px, 8vh) rotate(0deg);
     animation-timing-function: ease-in-out;
-    color: orange;
+    color:rgb(66, 15, 0);
   }
   39% {
     /* transform: translate(55px, 28px); */
@@ -230,7 +236,7 @@ img{
     /* animation-timing-function: ease-out; */
   }
   45%{
-    color: yellow;
+    color:rgb(133, 80, 46);
   }
   54% {
     /* transform: translate(80px, 148px); 24vh*/
@@ -247,7 +253,7 @@ img{
     /* transform: translate(80px, 148px); */
     transform: rotate(0deg) translate(100px, 24vh) rotate(0deg);
     animation-timing-function: ease-in-out;
-    color: green;
+    color:rgb(224, 167, 131);
   }
   69% {
     /* transform: translate(95px, 102px); */
@@ -255,7 +261,7 @@ img{
     /* animation-timing-function: ease-out; */
   }
   75% {
-    color: blue;
+    color:rgb(224, 131, 131);
   }
   84% {
     /* transform: translate(120px, 222px); */
@@ -272,7 +278,7 @@ img{
     /* transform: translate(120px, 222px); */
     transform: translate(150px, 40vh);
     animation-timing-function: ease-in;
-    color: purple;
+    color:firebrick;
   }
   100% {
     /* transform: translate(240px, 222px); */
