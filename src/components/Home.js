@@ -36,6 +36,7 @@ const Home = () => {
             <h3 className="subtitle">You have entered the lair of...</h3>
             <h1 className="title">Jeffrey McClellan, PhD</h1>
             <div className="line"/>
+            <div className="monster click">Click Me!</div>
             <GiChicken className="monster travel" onClick={handleAudio}/>
             <div className="wall one">
               <GiBrickWall />

@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
 .App-header {
   background-color: #282c34;
   /* max-height: 10vh; */
@@ -83,6 +77,18 @@
   animation-duration: 10s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.click{
+  top: calc(15vh + 70px);
+  color:transparent;
+  font-size: calc(10px + 4vmin);
+  z-index: 8;
+  animation-name: destroy, click-color;
+  animation-delay: 1s;
+  animation-duration: 10s, 1s;
+  animation-iteration-count: 1, 10;
+  animation-fill-mode:forwards, none;
 }
 
 .wall{
@@ -287,9 +293,40 @@ img{
   }
 }
 
+@keyframes click-color {
+  0% {
+    color: indigo;
+  }
+  16.7% {
+    color:crimson;
+  }
+  33.3% {
+    color:darkorange;
+  }
+  50%{
+    color:gold;
+  }
+  66.7%{
+    color:lime;
+  }
+  83.3%{
+    color:mediumblue;
+  }
+  100% {
+    color:indigo;
+  }
+  /* 100% {
+    color: transparent;
+  } */
+}
+
 @media (max-width: 650px){
   .monster{
     top: 20vh;
+  }
+  .click{
+    top: calc(20vh + 30px);
+    left: calc(3vw - 8px);
   }
   .one{
     top: calc(20vh + 8vh + 20vmin);
@@ -335,14 +372,5 @@ img{
   }
   100% {
     transform: translate(40px, 74px);
-  }
-} */
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 } */
