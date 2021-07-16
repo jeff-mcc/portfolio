@@ -228,6 +228,22 @@ img{
   box-shadow: 3px 3px 5px #282c34;
 }
 
+.stack-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80vw;
+  max-width: 900px;
+  color: white;
+}
+
+.stack-icon{
+  color: white;
+  min-height: 50px;
+  font-size: calc(30px + 4vmin);
+  margin: 0 10px;
+}
+
 @keyframes pic-appear {
   0% {
     opacity: 0%;
