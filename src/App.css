@@ -32,7 +32,7 @@
 
 .body{
   background-color: slateblue;
-  max-height: calc(100vh - 50px);
+  /* max-height: calc(100vh - 50px); */
   min-height: calc(100vh - 50px - 4vmin);
   color: transparent;
   display: flex;
@@ -65,6 +65,12 @@
   z-index: 5;
 }
 
+.textBox{
+  color: black;
+  width: 90vw;
+  max-width: 1000px;
+}
+
 .monster{
   color:firebrick;
   font-size: calc(10px + 20vmin);
@@ -80,6 +86,7 @@
 }
 
 .click{
+  cursor: default;
   top: calc(15vh + 70px);
   color:transparent;
   font-size: calc(10px + 4vmin);
@@ -156,6 +163,15 @@ img{
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.familyImg{
+  /* margin: 10px 0; */
+  position: relative;
+  width: 90vw;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px #282c34;
 }
 
 @keyframes pic-appear {
