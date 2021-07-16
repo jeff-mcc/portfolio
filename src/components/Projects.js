@@ -7,9 +7,9 @@ const Projects = (props) => {
 
     return(
         <div className="body">
-            Projects
-            <h3 className="subtitle">Etched on the walls you find...</h3>
-            <h1 className="title">Nothing, Jeffrey uses Git for version control, not stone walls</h1>
+            Willow, you idiot
+            <h3 className="subtitle">Etched into the walls you find...</h3>
+            <h1 className="title">Nothing! Jeffrey uses Git for version control, not stone walls</h1>
             <div className="line"/>
             <div className="container">
                 <div className="linked-container">

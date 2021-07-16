@@ -3,7 +3,7 @@ const About = () => {
         <div className="body">
             I am your father
             <h3 className="subtitle">Inside the lair you find...</h3>
-            <h1 className="title">Chickens, and children, and running shoes... but no goats.</h1>
+            <h1 className="title">Chickens, and children, and running shoes... but not goats</h1>
             <div className="line"/>
             <div className="container">
                 <img className="familyImg" src="https://storage.googleapis.com/biomechweb/family%20pics-0379.jpg" alt="family"></img>
