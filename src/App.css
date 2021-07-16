@@ -65,10 +65,64 @@
   z-index: 5;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .textBox{
   color: black;
-  width: 90vw;
-  max-width: 1000px;
+  width: 80vw;
+  max-width: 800px;
+  text-align:justify;
+}
+
+.project-title{
+  cursor:pointer;
+  color: black;
+  margin: 15px 0 10px;
+  font-size: calc(14px + 1vmin);
+}
+
+.project-text{
+  color: black;
+  width: 80vw;
+  text-align: justify;
+  padding-bottom: 20px;
+  margin: 0 0 30px;
+  border-bottom: 1px dashed black;
+}
+
+.linked-container{
+  /* cursor:pointer; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-shape{
+  width: 80vw;
+  max-width: 350px;
+  overflow: hidden;
+  max-height: 184px;
+  box-shadow: 3px 3px 5px #282c34;
+}
+
+.project{
+  cursor:pointer;
+  width: 80vw;
+  max-width: 350px;
+  position: relative;
+  box-shadow: 3px 3px 5px #282c34;
+}
+
+a{
+  text-decoration: underline blue;
+}
+
+a:visited{
+  text-decoration: underline brown;
 }
 
 .monster{
@@ -152,7 +206,7 @@
   opacity: 0%;
   animation-name: pic-appear;
   animation-duration: 3s;
-  animation-delay: 11s;
+  animation-delay: 12s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -168,8 +222,8 @@ img{
 .familyImg{
   /* margin: 10px 0; */
   position: relative;
-  width: 90vw;
-  max-width: 600px;
+  width: 80vw;
+  max-width: 500px;
   border-radius: 20px;
   box-shadow: 3px 3px 5px #282c34;
 }
@@ -352,6 +406,22 @@ img{
   }
   .three{
     top: calc(20vh + 40vh + 20vmin);
+  }
+}
+
+@media (min-width: 900px){
+  .container{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .textBox{
+    width: 350px;
+    margin: 0 0 0 20px;
+  }
+  .project-text{
+    width: 350px;
+    margin: 0px 20px;
+    border-bottom: none;
   }
 }
 
