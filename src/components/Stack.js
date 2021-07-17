@@ -19,78 +19,78 @@ import {GiCow} from 'react-icons/gi'
 const Stack = () => {
     return(
         <div className="body">
-            Stack
+            I am Groot
             <h3 className="subtitle">As you ascend the stairs they shift beneath your feet, and you see...</h3>
             <h1 className="title">Development technologies, constantly shifting and changing</h1>
             <div className="line"/>
             <div className="stack-container">
                 <div className="icon-div">
                     <SiReact className="stack-icon"/>
-                    <p className="menu-item">React</p>
+                    <p className="menu-item stack">React</p>
                 </div>
                 <div className="icon-div">
                     <SiJavascript className="stack-icon"/>
-                    <p className="menu-item">Javascript</p>
+                    <p className="menu-item stack">Javascript</p>
                 </div>
                 <div className="icon-div">
                     <SiHtml5 className="stack-icon"/>
-                    <p className="menu-item">HTML</p>
+                    <p className="menu-item stack">HTML</p>
                 </div>
                 <div className="icon-div">
                     <SiCss3 className="stack-icon"/>
-                    <p className="menu-item">CSS</p>
+                    <p className="menu-item stack">CSS</p>
                 </div>
                 <div className="icon-div">
                     <SiRedux className="stack-icon"/>
-                    <p className="menu-item">Redux</p>
+                    <p className="menu-item stack">Redux</p>
                 </div>
                 <div className="icon-div">
                     <SiD3DotJs className="stack-icon"/>
-                    <p className="menu-item">D3</p>
+                    <p className="menu-item stack">D3</p>
                 </div>
                 <div className="icon-div">
                     <SiPostgresql className="stack-icon"/>
-                    <p className="menu-item">PostgreSQL</p>
-                </div>
-                <div className="icon-div">
-                    <SiNodeDotJs className="stack-icon"/>
-                    <p className="menu-item">Node</p>
-                </div>
-                <div className="icon-div">
-                    <SiDigitalocean className="stack-icon"/>
-                    <p className="menu-item">Digital Ocean</p>
-                </div>
-                <div className="icon-div">
-                    <SiGithub className="stack-icon"/>
-                    <p className="menu-item">GitHub</p>
-                </div>
-                <div className="icon-div">
-                    <SiSass className="stack-icon"/>
-                    <p className="menu-item">Sass/SCSS</p>
-                </div>
-                <div className="icon-div">
-                    <SiR className="stack-icon"/>
-                    <p className="menu-item">R</p>
-                </div>
-                <div className="icon-div">
-                    <SiMathworks className="stack-icon"/>
-                    <p className="menu-item">Matlab</p>
-                </div>
-                <div className="icon-div">
-                    <SiGooglecloud className="stack-icon"/>
-                    <p className="menu-item">Google Cloud</p>
-                </div>
-                <div className="icon-div">
-                    <SiUbuntu className="stack-icon"/>
-                    <p className="menu-item">Ubuntu Linux</p>
+                    <p className="menu-item stack">PostgreSQL</p>
                 </div>
                 <div className="icon-div">
                     <GiBullyMinion className="stack-icon"/>
-                    <p className="menu-item">Bully Minion</p>
+                    <p className="menu-item stack">Butcher</p>
+                </div>
+                <div className="icon-div">
+                    <SiNodeDotJs className="stack-icon"/>
+                    <p className="menu-item stack">Node</p>
+                </div>
+                <div className="icon-div">
+                    <SiDigitalocean className="stack-icon"/>
+                    <p className="menu-item stack">Dig. Ocean</p>
+                </div>
+                <div className="icon-div">
+                    <SiGithub className="stack-icon"/>
+                    <p className="menu-item stack">GitHub</p>
                 </div>
                 <div className="icon-div">
                     <GiCow className="stack-icon"/>
-                    <p className="menu-item">Cow</p>
+                    <p className="menu-item stack">Cow</p>
+                </div>
+                <div className="icon-div">
+                    <SiSass className="stack-icon"/>
+                    <p className="menu-item stack">Sass/SCSS</p>
+                </div>
+                <div className="icon-div">
+                    <SiR className="stack-icon"/>
+                    <p className="menu-item stack">R</p>
+                </div>
+                <div className="icon-div">
+                    <SiMathworks className="stack-icon"/>
+                    <p className="menu-item stack">Matlab</p>
+                </div>
+                <div className="icon-div">
+                    <SiGooglecloud className="stack-icon"/>
+                    <p className="menu-item stack">G. Cloud</p>
+                </div>
+                <div className="icon-div">
+                    <SiUbuntu className="stack-icon"/>
+                    <p className="menu-item stack">Ubuntu</p>
                 </div>
             </div>
         </div>

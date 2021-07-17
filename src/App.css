@@ -223,9 +223,13 @@ img{
   /* margin: 10px 0; */
   position: relative;
   width: 80vw;
-  max-width: 500px;
+  max-width: 580px;
   border-radius: 20px;
   box-shadow: 3px 3px 5px #282c34;
+}
+
+.icon-div{
+  width: 25vmin;
 }
 
 .stack-container{
@@ -242,6 +246,12 @@ img{
   min-height: 50px;
   font-size: calc(30px + 4vmin);
   margin: 0 10px;
+}
+
+.stack{
+  /* min-width: 64.5px; */
+  margin-top: 5px;
+  margin-bottom: calc(8px + 1vmin);
 }
 
 @keyframes pic-appear {
@@ -425,7 +435,7 @@ img{
   }
 }
 
-@media (min-width: 900px){
+@media (min-width: 1000px){
   .container{
     flex-direction: row;
     align-items: flex-start;
