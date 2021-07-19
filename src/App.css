@@ -43,7 +43,7 @@
 .subtitle{
   color: black;
   font-size: calc(10px + 2vmin);
-  margin: 5px 0 10px;
+  margin: 5px 3vw 10px;
   /* font-family:fantasy; */
 }
 
@@ -254,6 +254,35 @@ img{
   margin-bottom: calc(8px + 1vmin);
 }
 
+.row-container{
+  color: white;
+  width: 85vw;
+  max-width: 600px;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  margin: 4vmin 0 9vmin;
+}
+
+.contact-text{
+  font-size: calc(12px + 1vmin);
+  width: 50vw;
+  max-width: 300px;
+  text-align: left;
+}
+
+.contact-link{
+  text-decoration: underline white;
+}
+
+.contact-link:visited{
+  text-decoration: underline white;
+}
+
+.contact-icon{
+  font-size: calc(20px + 4vmin);
+}
+
 @keyframes pic-appear {
   0% {
     opacity: 0%;
@@ -418,20 +447,20 @@ img{
 
 @media (max-width: 650px){
   .monster{
-    top: 20vh;
+    top: 28vh;
   }
   .click{
-    top: calc(20vh + 30px);
+    top: calc(28vh + 30px);
     left: calc(3vw - 8px);
   }
   .one{
-    top: calc(20vh + 8vh + 20vmin);
+    top: calc(28vh + 8vh + 20vmin);
   }
   .two{
-    top: calc(20vh + 24vh + 20vmin);
+    top: calc(28vh + 24vh + 20vmin);
   }
   .three{
-    top: calc(20vh + 40vh + 20vmin);
+    top: calc(28vh + 40vh + 20vmin);
   }
 }
 
