@@ -81,17 +81,17 @@
 .project-title{
   cursor:pointer;
   color: black;
-  margin: 15px 0 10px;
+  margin: 5px 0 10px;
   font-size: calc(14px + 1vmin);
 }
 
-.project-text{
-  color: black;
-  width: 80vw;
-  text-align: justify;
-  padding-bottom: 20px;
-  margin: 0 0 30px;
-  border-bottom: 1px dashed black;
+.style-title{
+  /* text-decoration: underline aliceblue; */
+  border-bottom: solid 1px aliceblue;
+}
+
+.popup-title{
+  margin: 40px 0 10px;
 }
 
 .linked-container{
@@ -105,16 +105,61 @@
   width: 80vw;
   max-width: 350px;
   overflow: hidden;
+  height: calc(80vw * .527);
   max-height: 184px;
   box-shadow: 3px 3px 5px #282c34;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .project{
   cursor:pointer;
   width: 80vw;
   max-width: 350px;
+  /* min-height: 184px; */
   position: relative;
   box-shadow: 3px 3px 5px #282c34;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* .dashed-line{
+  border-bottom: 1px dashed black;
+} */
+
+.popup{
+  color: black;
+  width: 90vw;
+  max-width: 400px;
+  border-radius: 10px;
+  position: absolute;
+  /* top: 25vh; */
+  /* left: 5vw; */
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  box-shadow: 3px 3px 5px #282c34;
+}
+
+.project-text{
+  color: black;
+  width: 87.5%;
+  text-align: justify;
+  /* padding-bottom: 20px; */
+  margin: 0 0 15px;
+  /* border-bottom: 1px dashed black; */
+}
+
+.close{
+  font-size: calc(18px + 1vmin);
+  margin: 10px 20px 0 0;
+  /* text-align: right; */
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 a{
@@ -281,6 +326,12 @@ img{
 
 .contact-icon{
   font-size: calc(20px + 4vmin);
+}
+
+.colored{
+  color: black;
+  font-size: 12px;
+  
 }
 
 @keyframes pic-appear {
@@ -475,8 +526,15 @@ img{
   }
   .project-text{
     width: 350px;
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
+    /* border-bottom: none; */
+  }
+  /* .dashed-line{
     border-bottom: none;
+  } */
+  .img-shape{
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
