@@ -49,7 +49,7 @@ const Projects = () => {
             <h3 className="subtitle">Etched into the walls you find...</h3>
             <h1 className="title">Nothing! Jeffrey uses Git for version control, not stone walls</h1>
             <div className="line"/>
-            <div className="container">
+            <div className={dispBool===true ? "container extend-background" : "container"}>
                 <div className="linked-container">
                     <h3 className="project-title style-title" onClick={()=>showProject(0)}>BiomechWeb</h3>
                     <div className="img-shape">
@@ -68,14 +68,18 @@ const Projects = () => {
                     {/* <a href="https://cache-n-dash.com/"><h3 className="project-title">Cache-N-Dash</h3></a> */}
                     {/* <p className="project-text">A group project that I created as part of a remote team of four students while enrolled at Devmountain. We used React to build the site, the Google Maps API to render the map and geo-locations, and NodeJS/PostgreSQL for the server and database. I took the lead role on development for the database, server, and building front end React components that incorporated back end data. I also played a large role in Map debugging and integration, as well as site styling.</p> */}
                 </div>
-                {dispBool && <div className="popup">
-                    <p className="close" onClick={closeProject}>x</p>
-                    <a href={aLink}><h3 className="project-title popup-title">{projTitle}</h3></a>
-                    <div className="img-shape">
-                        <a href={aLink}><img className="project" src={imgSrce} alt={projTitle}></img></a>
-                    </div>
-                    <p className="project-text">{projText}</p>
-                </div>}
+                {dispBool &&
+                    // <div className="body2"> 
+                        <div className="popup">
+                            <p className="close" onClick={closeProject}>x</p>
+                            <a href={aLink}><h3 className="project-title popup-title">{projTitle}</h3></a>
+                            <div className="img-shape">
+                                <a href={aLink}><img className="project" src={imgSrce} alt={projTitle}></img></a>
+                            </div>
+                            <p className="project-text">{projText}</p>
+                        </div>
+                    // </div>
+                }
             </div>
         </div>
     )
