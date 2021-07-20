@@ -259,7 +259,7 @@ a:visited{
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  opacity: 0%;
+  opacity: 0;
   animation-name: pic-appear;
   animation-duration: 3s;
   animation-delay: 13s;
@@ -346,10 +346,10 @@ img{
 
 @keyframes pic-appear {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
