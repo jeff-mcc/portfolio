@@ -60,7 +60,7 @@ const Home = () => {
             <h2 className="text two">Scientist</h2>
             <h2 className="text three">Husband and Father</h2>
             <div className="img-container">
-              <img src="https://storage.googleapis.com/biomechweb/IMG_20210620_130434_528.jpg" alt="being goofy"></img>
+              <img className="silly-img" src="https://storage.googleapis.com/biomechweb/IMG_20210620_130434_528.jpg" alt="being goofy"></img>
             </div>
       </div>
     )
