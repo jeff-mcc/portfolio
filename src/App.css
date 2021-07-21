@@ -270,6 +270,7 @@ a:visited{
 img{
   width: 90vw;
   max-width: calc(800px + 5vw);
+  min-height: 60vh;
   position: absolute;
   top: 0;
   right: 0;
